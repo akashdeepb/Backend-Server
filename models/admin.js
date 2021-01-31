@@ -19,6 +19,12 @@ const adminSchema = new mongoose.Schema({
     battalion:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'Battalion'
+    },
+    email : {
+        type : String
+    },
+    verification_code : {
+        type : Number
     }
 });
 
